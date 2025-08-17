@@ -1,0 +1,56 @@
+#[click]
+#full_text=Click me!
+#command=echo
+#color=#F79494
+
+# Guess the weather hourly
+#[weather]
+#command=curl -Ss 'https://wttr.in?' | cut -c 16- | head -2 | xargs echo
+interval=3600
+color=#A4C2F4
+
+
+#[ip]
+#Query my default IP address only on startup
+#command=hostname -i | awk '{ print "IP:" $1 }'
+interval=once
+color=#91E78B
+
+[GPU temp]
+command=bash .config/i3blocks/scripts/GTS
+interval=5
+color=#6E6E86
+#color=#984D65
+
+
+[CPU temp]
+command=bash .config/i3blocks/scripts/CTS
+interval=5
+color=#6E6E86
+#color=#984D65
+
+[Memory]
+command=bash .config/i3blocks/scripts/MA
+interval=10
+color=#625E6F
+#color=#984D65
+
+#[Battery]
+
+#Battery=Battery is at 
+#command=echo "$(acpi | awk '{print $4}' | tr -d ",") $(acpi | awk '{print $3}' | tr -d "," )" 
+#interval=30
+#color=#FF1090
+
+[Vol]
+command=bash ~/.config/i3blocks/scripts/Vol
+interval=1
+#color=#6E6E86
+color=#984D65
+
+# Update time every 5 seconds
+[time]
+command=bash ~/.config/i3blocks/scripts/Time
+interval=5
+#color=#6E6E86
+color=#984D65

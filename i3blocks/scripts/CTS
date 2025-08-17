@@ -1,0 +1,8 @@
+#! /usr/bin/bash 
+
+#sensor shows the temps 
+#grep takes the "cpu" line out 
+#awk than picks the 2nd var out and makes it an imput
+
+
+echo "CPU: $( sensors | grep "Tctl" | awk '{print $(2)}' )"

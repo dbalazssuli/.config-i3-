@@ -1,0 +1,4 @@
+Avalible memory
+
+
+echo "Mem : $(free -m -h | grep 15 | awk '{print $7}') "

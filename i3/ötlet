@@ -1,0 +1,89 @@
+basic settings
+>font
+>mod button
+>border
+-border shortcut
+
+>gaps
+>reload i3 config files
+>restart i3
+>log out
+
+
+########################x
+
+volume
+
+###########################
+
+brightness
+
+#########################x
+
+
+setup
+>picom
+>tlp 
+>nm-applet
+>blueman-applet
+
+#####################
+
+
+dmenu
+>
+>
+>
+
+#########################
+
+
+bar
+
+###########################
+
+everyday shortcuts
+
+>terminal
+>firefox
+>discord
+>kill
+>wallpaper
+>i3lock
+
+
+###########################
+
+resize
+>directions
+>hkjl
+
+############################
+
+focuse
+>direction
+>hjkl
+
+move
+>direction
+>hjkl
+
+###########################
+
+layout 
+
+>split
+-v
+-h
+>full screen
+>layout
+>floating
+
+##########################
+
+workspaces
+>name
+>shortcut
+>move
+
+#####################

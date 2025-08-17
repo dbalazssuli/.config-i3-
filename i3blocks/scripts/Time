@@ -1,0 +1,7 @@
+#! bin/bash 
+
+
+date +%F\ \ %T
+#if date +%H == 22 then 
+#	 notify-send "It's time to go to sleep"
+#fi

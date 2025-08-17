@@ -1,0 +1,4 @@
+
+
+echo "GPU $( sensors | grep "edge" | awk '{print $(2)}' )"
+

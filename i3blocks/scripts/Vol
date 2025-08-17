@@ -1,0 +1,49 @@
+#! bin/bash
+#1 	left
+#2	middle
+#3	right
+#4	up
+#5	down
+
+
+if [ -n "$BLOCK_BUTTON" ]; then 
+	case $BLOCK_BUTTON in 
+
+	1)  amixer set Master toggle ;;
+	4)  amixer set Master 10%+ ;;
+	5)  amixer set Master 10%- ;;
+
+    esac
+fi
+
+if
+	 amixer get Master | grep -q "off"; then
+	   echo "🔇 Muted" 
+  else 
+
+	vol=$(
+
+amixer get Master | grep "[0-9]*%" | head -n1 | awk '{print $5}' | tr -d "[]"
+
+)
+
+	   echo "$vol 🔊"
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+#  amixer get Master | grep "[0-9]*%" | head -n1 | awk '{print $5}' | tr -d "[]"
